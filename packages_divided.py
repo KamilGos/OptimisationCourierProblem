@@ -1,8 +1,3 @@
-# Theory and Methods of Optimization
-# Embedded Robotics
-# Computer assignments. Problem 3 - "packages problem"
-# Author: Kamil Goś
-
 from mip import Model, xsum, maximize, BINARY
 from prettytable import PrettyTable
 # packages awaiting shipment
@@ -71,6 +66,7 @@ m.optimize()
 
 selected_np = [i for i in I if x_np[i].x >= 0.99]
 selected_np_names = [names_np[i]+1 for i in selected_np]
+print("selected priority packages: {}".format(selected_p_names))
 print("selected non-priority packages: {}".format(selected_np_names))
 
 # LEFTOVERS CALCULATION

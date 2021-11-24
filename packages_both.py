@@ -1,8 +1,3 @@
-# Theory and Methods of Optimization
-# Embedded Robotics
-# Computer assignments. Problem 3 - "packages problem"
-# Author: Kamil Goś
-
 from mip import Model, xsum, maximize, BINARY
 from prettytable import PrettyTable
 # packages awaiting shipment
